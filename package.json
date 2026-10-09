@@ -1,0 +1,15 @@
+{
+  "name": "jingang-demo-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small Express app that pins an old lodash and calls merge on request data. The target Jingang patches.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "lodash": "4.17.4"
+  }
+}
