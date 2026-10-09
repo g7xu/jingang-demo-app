@@ -18,6 +18,11 @@ app.get("/tags", (req, res) => {
   res.json(tags);
 });
 
+app.post("/settings", (req, res) => {
+  const prefs = _.merge({}, defaults, req.body);
+  res.json(prefs);
+});
+
 module.exports = app;
 
 if (require.main === module) {
